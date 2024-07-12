@@ -1,0 +1,93 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Stroke Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Brain Stroke Prediction</h1>
+    <form action="/predict" method="post">
+       
+        <label for="gender">Choose a Gender:</label>
+
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select><br><br>
+        
+        <label for="age">Enter Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+        
+        <label for="hypertension">Presence of Hypertension /High Blood Pressure:</label>
+        <select name="hypertension" id="hypertension">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select><br><br>
+        
+        <label for="heart_disease">Presence of Heart Disease:</label>
+        <select name="heart_disease" id="heart_disease">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select><br><br>
+        
+        <label for="ever_married">Present or Previously Married:</label>
+        <select name="ever_married" id="ever_married">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+       <br><br>
+        
+        <label for="work_type">Select the Work Type:</label>
+        <select name="work_type" id="work_type">
+            <option value="Children">Children</option>
+            <option value="Govt Job">Government Job</option>
+            <option value="Private">Private</option>
+            <option value="Never Worked">Never Worked</option>
+            <option value="Self Employed">Self Employed</option>
+
+          </select>
+        <br><br>
+        
+        <label for="type_of_residence">Select the Type of Residence:</label>
+        <select name="type_of_residence" id="type_of_residence">
+            <option value="Rural">Rural</option>
+            <option value="Urban">Urban</option>
+          </select>
+        <br><br>
+        
+        <label for="avg_glucose_level"> Enter the Average Glucose Level / Average Sugar Level:</label>
+        <input type="text" id="avg_glucose_level" name="avg_glucose_level"><br><br>
+        
+        <label for="height"> Enter Height in metres:</label>
+        <input type="text" id="height" name="height"><br><br>
+
+        <label for="weight"> Enter Weight in kilograms:</label>
+        <input type="text" id="weight" name="weight"><br><br>
+
+        <label for="smoking_status"> Select the Smoking Status:</label>
+        <select name="smoking_status" id="smoking_status">
+            <option value="Currently Smokes">Currently Smokes</option>
+            <option value="Formerly Smoked">Formerly Smoked</option>
+            <option value="Never Smoked">Never Smoked</option>
+          </select>
+       <br><br>
+
+
+        
+        <input type="submit" value="Predict">
+    </form>
+    {{ prediction_text }}<br><br>
+    <iframe width="1200" height="900" src="https://lookerstudio.google.com/embed/reporting/4b3fa1ca-0611-4467-9c8b-1058f7f6f4cb/page/p_02sw1qt8hd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+       
+</body>
+
+</html>
+
+
